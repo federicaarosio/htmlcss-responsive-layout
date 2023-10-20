@@ -45,6 +45,7 @@ nav i {
 
 .menu-d-container {
   display: flex;
+  align-items: center;
 }
 
 nav ul {
