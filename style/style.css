@@ -74,6 +74,7 @@ div.card {
   /* height da rimuovere */
   width: 100%;
   border-radius: 25px;
+  padding: 2rem 1.5rem;
 }
 
 .columns {
@@ -100,12 +101,32 @@ div.card {
 h2.light-blue-text {
   color: #0084fd;
   font-size: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 p {
   font-size: 1rem;
   line-height: 2rem;
+  padding-bottom: 1.5rem;
 }
+
+button {
+  border: none;
+  border-radius: 25px;
+  padding: .8rem 2rem;
+}
+
+button.blue-btn {
+  background-color: #0084fd;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+section.features img {
+  width: 250px;
+  position: absolute;
+}
+
 
 /* FOOTER */
 .darkgray-bg {
