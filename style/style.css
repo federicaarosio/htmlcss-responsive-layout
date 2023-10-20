@@ -30,6 +30,19 @@ img.logo {
   border: 1px solid orchid;
 }
 
+.menu-desktop {
+  display: none;
+}
+
+.menu-d-container {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
 
 /* MAIN */
 section.features {
@@ -113,11 +126,11 @@ div.app-dev {
   }
 
   .column-left {
-    width: 60%;
+    width: 55%;
   }
 
   .column-right {
-    width: 40%;
+    width: 45%;
   }
 
 }
@@ -127,6 +140,14 @@ div.app-dev {
 @media screen and (min-width: 1200px) {
   .container {
     width: 950px;
+  }
+
+  i.fa-bars {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: block;
   }
 
   .columns {
@@ -144,4 +165,14 @@ div.app-dev {
   div.column-50 {
     width: calc((100% / 3) - 1rem);
   }
+
+  
+  .column-left {
+    width: 60%;
+  }
+
+  .column-right {
+    width: 40%;
+  }
+
 }
