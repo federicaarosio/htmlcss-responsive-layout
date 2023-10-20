@@ -51,7 +51,7 @@ div.card {
   border-radius: 25px;
 }
 
-.column {
+.columns {
   display: flex;
   flex-direction: column;
 }
@@ -87,15 +87,13 @@ div.app-dev {
 
 /* MEDIA QUERY */
 
+/* Tablet: screen almeno 576px */
 @media screen and (min-width: 576px) {
-  .container {
-    width: 700px;
-  }
-
   .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   div.one-third {
@@ -122,4 +120,23 @@ div.app-dev {
     width: 40%;
   }
 
+}
+
+/* Desktop: screen almeno 1200px */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 950px;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .right-container {
+    display: flex;
+    justify-content: flex-end;
+    /* Controllare qui*/
+  }
 }
