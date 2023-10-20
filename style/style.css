@@ -64,6 +64,8 @@ div.card {
   background-color: white;
 }
 
+
+/* FOOTER */
 .darkgray-bg {
   background-color: #333333;
 }
@@ -75,4 +77,29 @@ div.app-dev {
   height: 200px;
   /* height da rimuovere */
   margin-bottom: 2rem;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 700px;
+  }
+
+  .flex-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  div.one-third {
+    width: calc((100% / 3) - 1rem);
+  }
+
+  div.two-thirds {
+    width: calc(((100% / 3) *2) - 1rem);
+  }
+
+
 }
