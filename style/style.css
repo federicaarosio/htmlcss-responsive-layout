@@ -44,10 +44,11 @@ section.features {
 
 div.card {
   border: 1px solid black;
-  width: 100%;
   margin-bottom: 2rem;
   height: 200px;
   /* height da rimuovere */
+  width: 100%;
+  border-radius: 25px;
 }
 
 
@@ -61,6 +62,10 @@ div.card {
 
 .white-bg {
   background-color: white;
+}
+
+.darkgray-bg {
+  background-color: #333333;
 }
 
 div.img,
