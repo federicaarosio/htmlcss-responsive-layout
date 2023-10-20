@@ -225,6 +225,14 @@ div.app-dev {
     justify-content: space-between;
   }
 
+  section.features .two-columns {
+    display: flex;
+  }
+
+  section.features img {
+    align-self: self-end;
+  }
+
   .right-container {
     display: flex;
     justify-content: flex-end;
