@@ -98,7 +98,7 @@ div.app-dev {
   }
 
   div.two-thirds {
-    width: calc(((100% / 3) *2) - 1rem);
+    width: calc(((100% / 3) *2) - .5rem);
   }
 
 
