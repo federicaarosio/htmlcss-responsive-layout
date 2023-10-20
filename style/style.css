@@ -124,7 +124,31 @@ button.blue-btn {
 
 section.features img {
   width: 250px;
-  position: absolute;
+}
+
+section.features i {
+  font-size: 5rem;
+  padding-bottom: 1.5rem;
+}
+
+section.features i.fa-apple {
+  font-size: .85rem;
+  padding-bottom: 0;
+}
+
+div.one-third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p.text-align-center {
+  text-align: center;
+}
+
+p.bold-text {
+  font-weight: bold;
+  color: #607587;
 }
 
 
