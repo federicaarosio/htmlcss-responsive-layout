@@ -122,6 +122,7 @@ div.app-dev {
 
 }
 
+
 /* Desktop: screen almeno 1200px */
 @media screen and (min-width: 1200px) {
   .container {
@@ -138,5 +139,9 @@ div.app-dev {
     display: flex;
     justify-content: flex-end;
     /* Controllare qui*/
+  }
+
+  div.column-50 {
+    width: calc((100% / 3) - 1rem);
   }
 }
