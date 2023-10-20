@@ -37,7 +37,7 @@ section.features {
 }
 
 
-.flex-col {
+.row {
   display: flex;
   flex-direction: column;
 }
@@ -49,6 +49,11 @@ div.card {
   /* height da rimuovere */
   width: 100%;
   border-radius: 25px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -87,7 +92,7 @@ div.app-dev {
     width: 700px;
   }
 
-  .flex-col {
+  .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -101,5 +106,20 @@ div.app-dev {
     width: calc(((100% / 3) *2) - .5rem);
   }
 
+  div.column-50 {
+    width: calc((100% / 2) - 1rem);
+  }
+
+  section.about-us {
+    display: flex;
+  }
+
+  .column-left {
+    width: 60%;
+  }
+
+  .column-right {
+    width: 40%;
+  }
 
 }
