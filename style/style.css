@@ -75,7 +75,7 @@ div.card {
   /* height da rimuovere */
   width: 100%;
   border-radius: 25px;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 0 1.5rem;
 }
 
 .columns {
@@ -93,6 +93,7 @@ div.card {
 
 .white-bg {
   background-color: white;
+  color: black;
 }
 
 .text-white {
@@ -124,7 +125,8 @@ button.blue-btn {
 }
 
 section.features img {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 
 section.features i {
@@ -152,6 +154,26 @@ p.bold-text {
   color: #607587;
 }
 
+section.strategic-planning img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+div.img-circle-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: red;
+  overflow: hidden;
+}
+
+img.img-profile {
+  height: 200px;
+  margin-left: -50px;
+}
 
 /* FOOTER */
 .darkgray-bg {
@@ -206,8 +228,8 @@ div.app-dev {
 }
 
 
-/* Desktop: screen almeno 1200px */
-@media screen and (min-width: 1200px) {
+/* Desktop: screen almeno 768px */
+@media screen and (min-width: 768px) {
   .container {
     width: 950px;
   }
@@ -237,6 +259,7 @@ div.app-dev {
   .right-container {
     display: flex;
     justify-content: flex-end;
+    align-self: flex-end;
     /* Controllare qui*/
   }
 
