@@ -71,8 +71,6 @@ section.features {
 div.card {
   border: 1px solid black;
   margin-bottom: 2rem;
-  min-height: 200px;
-  /* height da rimuovere */
   width: 100%;
   border-radius: 25px;
   padding: 2rem 1.5rem 0 1.5rem;
@@ -179,24 +177,43 @@ div.text-wrapper {
   text-transform: uppercase;
 }
 
-.flex-column-center {
+.bold {
+  font-weight: 700;
+}
+
+.font-size-big {
+  font-size: 1.5rem;
+  padding: 0 .2rem;
+}
+
+.spacing {
+  letter-spacing: 2px;
+}
+
+.flex-column-ai-center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.flex-column-jc-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 div.img-circle-container {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-color: red;
   overflow: hidden;
-  min-width: 200px;
+  min-width: 150px;
 }
 
 img.img-profile {
-  height: 200px;
-  margin-left: -50px;
+  height: 150px;
+  margin-left: -25%;
 }
 
 /* FOOTER */
@@ -207,8 +224,6 @@ img.img-profile {
 div.text-wrapper,
 div.app-dev {
   border: 2px solid black;
-  min-height: 200px;
-  /* height da rimuovere */
   margin-bottom: 2rem;
 }
 
@@ -236,9 +251,14 @@ div.app-dev {
     width: calc((100% / 2) - 1rem);
   }
 
-  .flex-column-center {
+  .flex-column-ai-center {
     display: flex;
     flex-direction: row;
+  }
+
+  div.card .text-wrapper {
+    text-align: left;
+    padding-left: 1.5rem;
   }
 
   section.about-us {
