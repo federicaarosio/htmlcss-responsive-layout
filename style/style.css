@@ -166,8 +166,27 @@ p.bold-grey {
   color: #607587;
 }
 
+.left-container {
+  padding-top: 3rem;
+}
+
 section.strategic-planning img {
   width: 100%;
+  padding: 0 1.5rem;
+}
+
+.btn-container {
+  padding-bottom: 1.5rem;
+}
+
+.circle-btn {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #9792e4;
+  text-align: center;
+  margin: 0 auto;
 }
 
 h1 {
@@ -177,6 +196,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  padding: 1.5rem 0;
 }
 
 img.img-max-width100 {
@@ -231,8 +251,12 @@ img.img-profile {
   margin-left: -25%;
 }
 
-section.benefits p {
+.small-text {
   font-size: .8rem;
+}
+
+section.benefits p {
+  /* font-size: .8rem; */
   color: #959595;
   line-height: 1.5rem;
 }
@@ -314,7 +338,7 @@ div.app-dev {
 @media screen and (min-width: 768px) {
   .container {
     width: 70%;
-    max-width: 950px;
+    max-width: 900px;
   }
 
   i.fa-bars {
@@ -329,6 +353,8 @@ div.app-dev {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
   section.features .two-columns {
