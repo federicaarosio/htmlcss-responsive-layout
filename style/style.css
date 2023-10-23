@@ -27,14 +27,6 @@ nav.flex-between {
   align-items: center;
 }
 
-/* nav div.menu {
-  background-color: orchid;
-}
-
-img.logo {
-  border: 1px solid orchid;
-} */
-
 nav i {
   font-size: 1.5rem;
 }
@@ -296,6 +288,11 @@ section.about-us i.fa-quote-left {
   padding: 0 1.5rem;
 }
 
+.lighter-lilac {
+  color: #c6c4f0;
+  padding-top: 3rem;
+}
+
 .gold-text {
   color: #fdc15f;
 }
@@ -317,12 +314,15 @@ section.get-started a:link {
 
 div.text-wrapper,
 div.app-dev {
-  /* border: 2px solid black; */
   margin-bottom: 2rem;
 }
 
 footer a:link {
   color:#9792e4;
+}
+
+footer p {
+  line-height: 1rem;
 }
 
 
