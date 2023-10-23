@@ -27,13 +27,13 @@ nav.flex-between {
   align-items: center;
 }
 
-nav div.menu {
+/* nav div.menu {
   background-color: orchid;
 }
 
 img.logo {
   border: 1px solid orchid;
-}
+} */
 
 nav i {
   font-size: 1.5rem;
@@ -168,6 +168,7 @@ section.strategic-planning img {
 
 h1 {
   font-size: 2rem;
+  padding: 1.5rem 0;
 }
 
 img.img-max-width100 {
@@ -180,6 +181,7 @@ img.img-max-width100 {
 
 .uppercase {
   text-transform: uppercase;
+  padding-top: 1.5rem;
 }
 
 .bold {
@@ -223,6 +225,13 @@ img.img-profile {
 
 img.about {
   margin-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.small-container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 /* FOOTER */
@@ -276,6 +285,7 @@ div.app-dev {
 
   .column-left {
     width: 55%;
+    padding-right: 5rem;
   }
 
   .column-right {
@@ -288,7 +298,8 @@ div.app-dev {
 /* Desktop: screen almeno 768px */
 @media screen and (min-width: 768px) {
   .container {
-    width: 950px;
+    width: 70%;
+    max-width: 950px;
   }
 
   i.fa-bars {
@@ -325,11 +336,11 @@ div.app-dev {
 
   
   .column-left {
-    width: 60%;
+    width: 70%;
   }
 
   .column-right {
-    width: 40%;
+    width: 30%;
   }
 
 }
