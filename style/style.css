@@ -57,6 +57,11 @@ nav li {
   padding: 0 1rem;
 }
 
+nav button {
+  margin-bottom: 0;
+  padding: .5rem 1rem;
+  background-color: white;
+}
 
 /* MAIN */
 section.features {
@@ -124,10 +129,6 @@ button {
   margin-bottom: 2rem;
 }
 
-nav button {
-  margin-bottom: 0;
-}
-
 button.blue-btn {
   background-color: #0084fd;
   color: white;
@@ -135,8 +136,9 @@ button.blue-btn {
 }
 
 section.features img {
-  width: 100%;
-  max-width: 250px;
+  /* width: 100%; */
+  max-width: 240px;
+  display: block;
 }
 
 section.features i {
@@ -159,7 +161,7 @@ div.one-third {
   text-align: center;
 }
 
-p.bold-text {
+p.bold-grey {
   font-weight: bold;
   color: #607587;
 }
