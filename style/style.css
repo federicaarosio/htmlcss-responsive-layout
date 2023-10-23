@@ -10,7 +10,9 @@ body {
 }
 
 
-/* HEADER */
+
+
+/* --------------- HEADER --------------- */
 header {
   background-color: #0084fd;
 }
@@ -55,18 +57,26 @@ nav button {
   background-color: white;
 }
 
-/* MAIN */
-section.features {
+
+
+
+/* --------------- MAIN --------------- */
+
+section.features,
+section.strategic-plannning,
+section.testimonials,
+section.benefits,
+section.about-us,
+section.get-started {
   padding: 3rem 0;
 }
 
-.row {
+.row, .columns {
   display: flex;
   flex-direction: column;
 }
 
 div.card {
-  /* border: 1px solid black; */
   margin-bottom: 2rem;
   width: 100%;
   border-radius: 25px;
@@ -74,14 +84,43 @@ div.card {
 }
 
 section.features div.card {
-  padding: 1.5rem 1.5rem 0 1.5rem;
+  padding-bottom: 0;
 }
 
-.columns {
+div.one-third {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
+.left-container {
+  padding-top: 3rem;
+}
+
+.flex-column-ai-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-column-jc-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.about-us {
+  padding: 4rem 0;
+}
+
+.small-container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+
+/* -- text and bg colors -- */
 .lightblue-bg {
   background-color: #b5ddff;
 }
@@ -103,6 +142,28 @@ section.features div.card {
   color: white;
 }
 
+.lighter-lilac {
+  color: #c6c4f0;
+  padding-top: 3rem;
+}
+
+.gold-text {
+  color: #fdc15f;
+}
+
+
+
+/* -- h1, h2, h3, p, typography... --*/
+h1 {
+  font-size: 3.5rem;
+  padding: 1.5rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+}
+
 h3 {
   font-size: 1.3rem;
 }
@@ -122,86 +183,14 @@ p {
   padding-bottom: 1.5rem;
 }
 
-button {
-  border: none;
-  border-radius: 25px;
-  padding: .6rem 2rem;
-  margin-bottom: 2rem;
-}
-
-button.blue-btn {
-  background-color: #0084fd;
-  color: white;
-  margin-bottom: 1.5rem;
-}
-
-section.features img {
-  /* width: 100%; */
-  max-width: 240px;
-  display: block;
-}
-
-section.features i {
-  font-size: 5rem;
-  padding-bottom: 1.5rem;
-}
-
-section.features i.fa-apple {
-  font-size: .85rem;
-  padding-bottom: 0;
-}
-
-div.one-third {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.text-align-center {
-  text-align: center;
-}
-
 p.bold-grey {
   font-weight: bold;
   color: #607587;
 }
 
-.left-container {
-  padding-top: 3rem;
-}
-
-section.strategic-planning img {
-  width: 100%;
-  padding: 0 1.5rem;
-}
-
-.circle-btn {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  background-color: #9792e4;
+.text-align-center {
   text-align: center;
-  margin: 0 auto;
 }
-
-h1 {
-  font-size: 3.5rem;
-  padding: 1.5rem 0;
-}
-
-h2 {
-  font-size: 2rem;
-  padding: 1.5rem 0;
-}
-
-img.img-max-width100 {
-  max-width: 100%;
-}
-
-/* div.text-wrapper {
-  text-align: center;
-} */
 
 .uppercase {
   text-transform: uppercase;
@@ -221,23 +210,82 @@ img.img-max-width100 {
   letter-spacing: 2px;
 }
 
-.flex-column-ai-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.small-text {
+  font-size: .8rem;
 }
 
-.flex-column-jc-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+section.benefits p {
+  color: #959595;
+  line-height: 1.5rem;
+}
+
+section.about-us,
+section.about-us p {
+  line-height: 2rem;
+}
+
+
+/* -- buttons --*/
+button {
+  border: none;
+  border-radius: 25px;
+  padding: .6rem 2rem;
+  margin-bottom: 2rem;
+}
+
+button.blue-btn {
+  background-color: #0084fd;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.circle-btn {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #9792e4;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bigger-btn {
+  padding: 1.5rem 4rem;
+  color: #9792e4;
+  border-radius: 50px;
+}
+
+
+
+/* -- images and icons-- */
+section.features img {
+  max-width: 240px;
+  display: block;
+}
+
+section.features i {
+  font-size: 5rem;
+  padding-bottom: 1.5rem;
+}
+
+section.features i.fa-apple {
+  font-size: .85rem;
+  padding-bottom: 0;
+}
+
+section.strategic-planning img {
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+img.img-max-width100 {
+  max-width: 100%;
 }
 
 div.img-circle-container {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: red;
   overflow: hidden;
   min-width: 150px;
 }
@@ -245,25 +293,6 @@ div.img-circle-container {
 img.img-profile {
   height: 150px;
   margin-left: -25%;
-}
-
-.small-text {
-  font-size: .8rem;
-}
-
-section.benefits p {
-  /* font-size: .8rem; */
-  color: #959595;
-  line-height: 1.5rem;
-}
-
-section.about-us {
-  padding: 4rem 0;
-}
-
-section.about-us,
-section.about-us p {
-  line-height: 2rem;
 }
 
 img.about {
@@ -282,32 +311,16 @@ section.about-us i.fa-quote-left {
   left: 120px;
 }
 
-.small-container {
-  max-width: 450px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
 
-.lighter-lilac {
-  color: #c6c4f0;
-  padding-top: 3rem;
-}
-
-.gold-text {
-  color: #fdc15f;
-}
-
-.bigger-btn {
-  padding: 1.5rem 4rem;
-  color: #9792e4;
-  border-radius: 50px;
-}
-
+/* -- links -- */
 section.get-started a:link {
   color: white;
 }
 
-/* FOOTER */
+
+
+
+/* --------------- FOOTER --------------- */
 .darkgray-bg {
   background-color: #333333;
 }
@@ -326,9 +339,9 @@ footer p {
 }
 
 
-/* MEDIA QUERY */
+/* --------------- MEDIA QUERY --------------- */
 
-/* Tablet: screen almeno 576px */
+/* -- Tablet: screen almeno 576px -- */
 @media screen and (min-width: 576px) {
   .row {
     display: flex;
@@ -382,7 +395,7 @@ footer p {
 }
 
 
-/* Desktop: screen almeno 768px */
+/* -- Desktop: screen almeno 768px -- */
 @media screen and (min-width: 768px) {
   .container {
     width: 70%;
@@ -423,7 +436,6 @@ footer p {
     width: calc((100% / 3) - 1rem);
   }
 
-  
   .column-left {
     width: 70%;
   }
