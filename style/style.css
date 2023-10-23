@@ -119,6 +119,10 @@ h3.light-blue-text {
   color: #0084fd;
 }
 
+section.about-us h3 {
+  padding: 1.5rem 0;
+}
+
 p {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -276,7 +280,7 @@ img.about {
 }
 
 .about-us-image {
-  position: relative; 
+  position: relative;
 }
 
 section.about-us i.fa-quote-left {
@@ -292,6 +296,19 @@ section.about-us i.fa-quote-left {
   padding: 0 1.5rem;
 }
 
+.gold-text {
+  color: #fdc15f;
+}
+
+.bigger-btn {
+  padding: 1.5rem 4rem;
+  color: #9792e4;
+  border-radius: 50px;
+}
+
+section.get-started a:link {
+  color: white;
+}
 
 /* FOOTER */
 .darkgray-bg {
@@ -302,6 +319,10 @@ div.text-wrapper,
 div.app-dev {
   /* border: 2px solid black; */
   margin-bottom: 2rem;
+}
+
+footer a:link {
+  color:#9792e4;
 }
 
 
@@ -352,6 +373,10 @@ div.app-dev {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .gold-text {
+    font-size: 5.5rem;
   }
 
 }
